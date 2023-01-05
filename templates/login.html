@@ -1,0 +1,28 @@
+{% extends "index.html" %} 
+
+{% block content%}
+
+<body>
+  <section>
+    <div class="container">
+      <div class="user signinBx">
+        <div class="imgBx"><img src="/static/coffe.jpg" alt="" /></div>
+        <div class="formBx">
+          <form method="post" >
+            {% csrf_token %}
+            <h2>Sign In</h2>
+            <input type="text" name="username" placeholder="Username" />
+            <input type="password" name="password" placeholder="Password" />
+            <input type="submit" name="submit" value="Login" />
+            <p class="signup">
+              Don't have an account ?
+              <a href="/register" onclick="toggleForm();">Sign Up.</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      
+  </section>
+</body>
+
+{% endblock %}

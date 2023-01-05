@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "ecmel.vscode-html-css",
+        "batisteo.vscode-django",
+        "blackboxapp.blackbox"
+    ]
+}
